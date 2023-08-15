@@ -19,14 +19,14 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.victor.workshopmongo.domain.Post;
 import com.victor.workshopmongo.domain.User;
 import com.victor.workshopmongo.dto.UserDTO;
-import com.victor.workshopmongo.services.UserSevice;
+import com.victor.workshopmongo.services.UserService;
 
 @RestController
 @RequestMapping(value = "/users")
 public class UserResource {
 
 	@Autowired
-	private UserSevice service;
+	private UserService service;
 
 	@GetMapping
 	public ResponseEntity<List<UserDTO>> findAll() {

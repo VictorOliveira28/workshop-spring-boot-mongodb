@@ -12,7 +12,7 @@ import com.victor.workshopmongo.repository.UserRepository;
 import com.victor.workshopmongo.services.exception.ObjectNotFoundException;
 
 @Service
-public class UserSevice {
+public class UserService {
 
 	@Autowired
 	private UserRepository repo;
